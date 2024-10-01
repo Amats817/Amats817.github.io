@@ -1,0 +1,249 @@
+/* Fredoka */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body{
+    font-size: 16px;
+    color: black;
+    font-family: Fredoka, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, 
+h4 ,h5 ,h6{
+    font-weight: 400;  
+}
+
+.header-container{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+    border-bottom: 2px solid black;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+header h1{ 
+    padding-left: 1.5rem;
+}
+
+nav{
+    padding-right: 3rem; 
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Hero */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 4rem;
+    margin-top: 4rem;
+    height: 50vh;
+}
+
+.hero-left img {
+    width: auto;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.hero-left h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-right p {
+    margin-bottom: 2rem;
+}
+
+.hero-right button {
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+    .hero-section, .experience-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-right, .experience-left, .experience-right {
+        width: 100%;
+    }
+
+    .hero-right button {
+        margin-bottom: 1rem;
+    }
+}
+
+/* About Me */
+.about-me-section {
+    padding: 4rem;
+    background-color: #f0f0f0;
+}
+
+.about-me-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-me-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Projects */
+.projects-section {
+    padding: 4rem;
+    background-color: #f9f9f9;
+}
+
+.projects-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.projects-list li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    list-style-type: circle;
+    
+}
+
+/* Skills */
+.skills-section {
+    padding: 4rem;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.skills-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    position: relative;
+    margin: 10px; 
+}
+
+.skill-icon {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip */
+.tooltip {
+    visibility: hidden; 
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.skill:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* contact */
+.contact-section {
+    padding: 4rem;
+    background-color: #f9f9f9;
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
