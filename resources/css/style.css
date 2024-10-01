@@ -24,6 +24,7 @@ h4 ,h5 ,h6{
     top: 0;
     z-index: 100;
     background-color: white;
+    padding: 1rem;
 }
 
 header h1{ 
@@ -45,6 +46,11 @@ nav ul li a{
     color: black;
 }
 
+@media screen and (max-width: 600px) {
+    .header-container{
+        display: none;
+    }
+}
 /* Hero */
 
 .hero-section {
