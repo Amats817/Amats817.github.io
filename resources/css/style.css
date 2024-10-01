@@ -46,12 +46,25 @@ nav ul li a{
     color: black;
 }
 
-@media screen and (max-width: 600px) {
-    .header-container{
-        display: none;
+@media screen and (max-width: 760px) {
+    .header-container {
+        position: fixed;
+        top: 0;
+        transition: top 0.3s;
+    }
+    
+    .header-container.scrolled {
+        top: -120px;
     }
 }
 /* Hero */
+
+/* push hero section more down with mobile */
+@media screen and (max-width: 760px) {
+    .hero-section {
+        margin-top: 10rem !important;
+    }
+}
 
 .hero-section {
     display: flex;
@@ -100,17 +113,16 @@ nav ul li a{
 }
 
 @media screen and (max-width: 760px) {
-    .hero-section, .experience-section {
+    .hero-section {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        height: auto;
     }
-
-    .hero-right, .experience-left, .experience-right {
-        width: 100%;
+    .hero-left {
+        margin-bottom: 2rem;
     }
-
-    .hero-right button {
-        margin-bottom: 1rem;
+    .hero-right {
+        text-align: center;
     }
 }
 
@@ -129,6 +141,12 @@ nav ul li a{
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-me-section, .projects-section, .skills-section, .contact-section {
+        padding: 1rem;
+    }
 }
 
 /* Projects */
@@ -252,4 +270,9 @@ nav ul li a{
     margin: 0 auto; 
 }
 
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 1rem 0;
+    }
+}
 
