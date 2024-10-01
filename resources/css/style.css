@@ -51,10 +51,11 @@ nav ul li a{
         position: fixed;
         top: 0;
         transition: top 0.3s;
+        text-align: center;
     }
     
     .header-container.scrolled {
-        top: -120px;
+        top: -15rem;
     }
 }
 /* Hero */
